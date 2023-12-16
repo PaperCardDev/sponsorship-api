@@ -2,6 +2,7 @@ package cn.paper_card.sponsorship.api;
 
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
 
@@ -15,4 +16,8 @@ public interface SponsorshipApi2 {
 
     // 赞助链接
     @NotNull String getDonationLink();
+
+    void setQqGroupMessageSender(@Nullable QqGroupMessageSender sender);
+
+    @Nullable QqGroupMessageSender getQqGroupMessageSender();
 }
